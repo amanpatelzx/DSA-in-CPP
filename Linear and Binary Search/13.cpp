@@ -1,4 +1,4 @@
-#include<iostream>//
+  n#include<iostream>//
 #include<vector>
 using namespace std;//roated array index by binary search
 int main(){
@@ -10,7 +10,7 @@ int main(){
     int high=v1.size()-1;
        while(low<=high){
         int mid=(low+high)/2;
-    if(v1[mid]==target){
+    if(v1[mid]==target){ 
         cout<<mid;
         break;
     }

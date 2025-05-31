@@ -1,6 +1,6 @@
 #include<iostream>//this is quicksort method for sorting
 #include<vector>//here time complexicity O(nlog(n))
-using namespace std;//space is O(log)
+using namespace std;//space is O(log).
 int itsplace(vector<int>&arr,int si,int ei){
     int idx=0;
     int a=si,b=ei;

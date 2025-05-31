@@ -1,39 +1,33 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
-int itsplace(vector<int>& arr, int si, int ei) {
-    int idx = 0;
-    int a = si, b = ei;
-    for (int i = si + 1; i <= ei; i++) {
-        if (arr[si] > arr[i]) idx++;
+#include<iostream>//this is quickSELECT
+#include<vector>//
+using namespace std;//
+int itsplace(vector<int>&arr,int si,int ei){
+    int idx=0;
+    int a=si,b=ei;
+    for(int i=si+1;i<=ei;i++){
+        if(arr[si]>arr[i]) idx++;
     }
-    swap(arr[si], arr[si + idx]); // Place pivot in its correct position
-    int pivotIndex = si + idx;
-    while (a < pivotIndex && b > pivotIndex) {
-        if (arr[a] > arr[pivotIndex] && arr[b] < arr[pivotIndex]) {
-            swap(arr[a], arr[b]);
+    swap(arr[si],arr[si+idx]);
+    int pi=si+idx;
+    while(a<pi and b>pi){
+        if(arr[a]>arr[pi] and arr[b]<arr[pi]){
+            swap(arr[a],arr[b]);
             a++;
             b--;
-        } else if (arr[a] <= arr[pivotIndex]) a++;
+        }
+        else if(arr[a]<=arr[pi]) a++;
         else b--;
     }
-    return pivotIndex;
+    return pi;
 }
-
-void quicksort(vector<int>& arr, int si, int ei) {
-    if (si >= ei) return; // Base case
-    int p = itsplace(arr, si, ei);
-    quicksort(arr, si, p - 1); // Exclude pivot index
-    quicksort(arr, p + 1, ei); // Exclude pivot index
+int quickselect(vector<int>&arr,int si,int ei,int k){
+    int p=itsplace(arr,si,ei);
+    if(p+1==k) return arr[p];
+    else if(p+1<k) return quickselect(arr,p+1,ei,k);
+    else return quickselect(arr,si,p-1,k);
 }
-
-int main() {
-    vector<int> arr = {5, 3, 4, 2, 6, 1};
-    int si = 0, ei = arr.size() - 1;
-    quicksort(arr, si, ei);
-    for (int i = 0; i < arr.size(); i++) {
-        cout << arr[i] << " ";
-    }
-    return 0;
+int main(){
+    vector<int> arr={5,78,4,2,6,1,8};
+    int k=3;//this is the kth smallest element
+    cout<<quickselect(arr,0,arr.size()-1,k);
 }

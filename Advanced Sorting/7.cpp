@@ -1,5 +1,5 @@
 #include<iostream>//inversion count//very important concept ,kepp in mind
-#include<vector>//optimise way
+#include<vector>//optimise way//
 using namespace std;
 int ss(vector<int>&a,vector<int>&b){
     int i=0,j=0,c=0;

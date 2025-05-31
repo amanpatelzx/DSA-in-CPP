@@ -13,4 +13,4 @@ int main(){
     cout<<"Enter the string : ";
     cin>>s;
     subset("",s);
-}
+} 

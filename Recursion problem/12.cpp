@@ -24,7 +24,7 @@ void storesubset(string ans,string original,vector<string>&v,bool flag){
         return;
 }
 int main(){
-    string str="aac";
+    string str="aba";
     vector<string>v;
     storesubset("",str,v,true);
     for(int i=0;v.size();i++){

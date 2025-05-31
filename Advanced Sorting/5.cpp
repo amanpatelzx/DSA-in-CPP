@@ -1,4 +1,4 @@
-#include<iostream>//merge reverse sorting got it bro 
+#include<iostream>//merge reverse sorti.ng got it bro 
 #include<vector>
 using namespace std;
 void merge(vector<int>&arr,vector<int>&brr,vector<int>&ans){

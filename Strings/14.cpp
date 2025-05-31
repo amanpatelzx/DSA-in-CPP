@@ -1,4 +1,4 @@
-#include<iostream>//finding no. of digits without using loop;
+#include<iostream>
 #include<string>
 using namespace std;
 int main(){

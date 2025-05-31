@@ -1,5 +1,5 @@
 #include<iostream>//inversion count
-#include<vector>//brute force methtod;
+#include<vector>//brute force methtod;.
 using namespace std;
 int main(){
     vector<int> arr={5,1,8,2,3};

@@ -1,5 +1,5 @@
 #include<iostream>//revesre sorting;
-#include<vector>//great; learn this way good
+#include<vector>//great; learn this way. good
 using namespace std;
 void merge(vector<int>&arr,vector<int>&brr,vector<int>&ans){
     int i=0,j=0,k=0;
