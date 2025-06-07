@@ -21,7 +21,7 @@ string decimal_to_binary( int a ){
 }
 int main() {
     string s = "1000";//1*2^0+1*2^1+1*2^2+0+0+0=1+2+4=7
-    int a = 9;
+    int a = 1111117876;
     cout << binary_to_decimal( s ) << "\n";
     cout << decimal_to_binary( a );
 }
