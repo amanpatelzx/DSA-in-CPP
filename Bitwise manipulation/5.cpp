@@ -19,5 +19,5 @@ int finding_2greatestpow(int a){
 int main(){
     cout<<finding_2greatestpow(50);
     cout<<endl;
-    cout<<finding_2greatestpower(50);
+    cout<<finding_2greatestpower(100);
 }

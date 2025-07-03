@@ -3,12 +3,12 @@
 using namespace std;
 bool toprime(int n){
     if(n==1) return false;
-    for(int i=2;i<sqrt(n);i++){
+    for(int i=2;i<=sqrt(n);i++){
         if(n%i==0) return false;
     }
     return true;
 }
 int main(){
-    int a=991;
+    int a=2;
     cout<<toprime(a);
 }
