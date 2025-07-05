@@ -9,6 +9,13 @@ class Node{
         this->next=NULL;
     }
 };
+void display(Node* a){
+    Node* temp=a;
+    while(temp!=NULL){
+        cout<<temp->val<<" ";
+        temp=temp->next;
+    }
+}
 int main(){
     Node* a=new Node(10);
     Node* b=new Node(20);
@@ -19,8 +26,5 @@ int main(){
     b->next=c;
     c->next=d;
 
-    //lets print d;
-    cout<<a->next->next->next->val;
-    //this is more easy to do using pointer
-
-}
+    display(a);
+}//this more optimise way of previouse way of doing

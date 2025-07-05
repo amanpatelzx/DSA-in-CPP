@@ -19,8 +19,9 @@ int main(){
     b->next=c;
     c->next=d;
 
-    //lets print d;
-    cout<<a->next->next->next->val;
-    //this is more easy to do using pointer
-
-}
+    Node* temp=a;
+    while(temp!=NULL){
+        cout<<temp->val<<" ";
+        temp=temp->next;
+    }
+}//this more optimise way of previouse way of doing

@@ -13,3 +13,4 @@ int main(){
     bike bullet;
     //its result prove if you create a bike then it class to constructor
 }
+//"const int a = 10; declares an integer a as constant, which means its value is fixed throughout the program, and you cannot modify it after initialization."
