@@ -16,6 +16,17 @@ void display(Node* a){
         temp=temp->next;
     }
 }
+void display1(Node* &a){
+    Node* temp=a->next->next;
+    Node* t1=new Node(100);
+    a->next->next=t1;
+    t1->next=temp;
+    temp=a;
+    while(temp!=NULL){
+        cout<<temp->val<<" ";
+        temp=temp->next;
+    }
+}
 int main(){
     Node* a=new Node(10);
     Node* b=new Node(20);
@@ -27,4 +38,11 @@ int main(){
     c->next=d;
 
     display(a);
+    cout<<endl;
+    display1(a);
+    cout<<endl;
+    display(a);
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
 }//this more optimise way of previouse way of doing
