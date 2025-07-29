@@ -13,7 +13,7 @@ int priority(char ch){
 }
 int main(){
     string s1="2+6*4/8-3";//this is infinix expresion
-    string s="2+6*4/1+8-3";//this is infinix expresion
+    string s="2+6*4/8-3";//this is infinix expresion
     //we need two stack , 1 for val, 2nd for opration;
     stack<int> val;
     stack<char> op;

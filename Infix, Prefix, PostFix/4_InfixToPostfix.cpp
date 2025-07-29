@@ -20,7 +20,7 @@ int main(){
                     val.pop();
                     string val1= val.top();
                     val.pop();
-                    string ans=op.top()+val1+val2;
+                    string ans=val1+val2+op.top();
                     val.push(ans);
                     op.pop();
                 }
@@ -33,7 +33,7 @@ int main(){
         val.pop();
         string val1= val.top();
         val.pop();
-        string ans=op.top()+val1+val2;
+        string ans=val1+val2+op.top();
         val.push(ans);
         op.pop();
     }
