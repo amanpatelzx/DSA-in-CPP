@@ -25,6 +25,4 @@ int main(){
     cout<<"Enter the No. -> ";
     cin>>n;
     cout<<helper(n);
-    
-
 }

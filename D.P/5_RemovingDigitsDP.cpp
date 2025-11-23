@@ -27,5 +27,4 @@ int main(){
     cin>>n;
     vector<int> dp(n+2,-1);
     cout<<helper(n , dp);
-
 }
