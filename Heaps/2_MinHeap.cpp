@@ -12,5 +12,5 @@ int main(){//this how you insialise queue
     cout<<pq.top()<<endl;
     pq.pop();
     cout<<pq.top()<<endl;
-
+    
 }

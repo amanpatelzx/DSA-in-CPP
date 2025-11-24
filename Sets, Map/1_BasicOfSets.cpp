@@ -35,4 +35,7 @@ int main(){
     for(int ele : s){//this how you can print all element in that given data structure;
         cout<<ele<<" ";
     }
+    cout<<endl;
+    // if(s.find(4)!=s.end()) cout<<"Yes Exist";
+    // else cout<<"Does't exist";
 }
