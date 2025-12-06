@@ -48,6 +48,4 @@ int main(){
 
     LevelRightToLeft(a);
     cout<<endl;
-    
-
 }

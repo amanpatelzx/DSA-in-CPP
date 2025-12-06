@@ -19,6 +19,7 @@ int main(){
 
    
     s2.insert("Aman");
+    s2.insert("Amak");
     s2.insert("Prakash");
     s2.insert("Aditya");
     s2.insert("Vinay");

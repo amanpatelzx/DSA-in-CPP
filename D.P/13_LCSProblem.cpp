@@ -22,6 +22,17 @@ int f2(vector<int> &arr, vector<int> &brr , int i , int j){//this is my way of d
     }
     return ans;
 }
+int f4( string s1, string s2){//this one more optimise lcs
+        int m = s1.size(), n = s2.size();
+        vector<vector<int>> dp(m+1, vector<int>(n+1, 0));
+        for(int i = m - 1 ; i >=0 ; i--){
+            for(int j = n-1; j>=0 ; j--){
+                if(s1[i] == s2[j]) dp[i][j] = 1 + dp[i+1][j+1];
+                else dp[i][j] = max( dp[i+1][j], dp[i][j+1]);
+            }
+        }
+        return dp[0][0];
+    }
 int f(vector<int> &arr, vector<int> &brr, int i, int j , int k , vector<vector<vector<int>>> &dp){//accual problem
     if (i == arr.size() || j == brr.size()) return 0;
     if ( dp[i][j][k] != -1) return dp[i][j][k];
