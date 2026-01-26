@@ -35,7 +35,7 @@ void f( int n , int row , vector<vector<string>> &ans ,vector<string> &temp , in
         return;
     }
 int main(){
-    int n = 15;
+    int n = 12;
     vector<vector<string>> ans;
         vector<string> temp;
         string s = "";
