@@ -4,7 +4,7 @@ class bike{
 public:
     int range;
     int engineSize;
-its also use as insilising value; i.g;
+// its also use as insilising value; i.g;
     bike(int range,int engineSize){
         this->range=range;
         this->engineSize=engineSize;

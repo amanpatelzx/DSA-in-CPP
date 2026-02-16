@@ -2,8 +2,8 @@
 #include<cmath>//to print all factor f a no.
 using namespace std;
 void toprime(int n){
-    for(int i=1;i<sqrt(n);i++){
-        if(n%i==0) {
+    for(int i=1;i<sqrt(n);i++){//we know -> no of factor before sqrt  =  after sqrt
+        if(n%i==0) {           //if here  , its ith position , then there its at n/i th position
             if(i*i!=n) cout<<i<<", ";
         }
         else cout<<i<<" ,";
@@ -15,6 +15,6 @@ void toprime(int n){
     }
 }
 int main(){
-    int a=100;
+    int a=111;
     toprime(a);
 }
