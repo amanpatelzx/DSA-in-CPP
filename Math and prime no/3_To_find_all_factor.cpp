@@ -15,6 +15,6 @@ void toprime(int n){
     }
 }
 int main(){
-    int a=111;
+    int a=913;
     toprime(a);
 }

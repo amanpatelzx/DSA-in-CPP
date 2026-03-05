@@ -9,6 +9,6 @@ bool toprime(int n){
     return true;
 }
 int main(){
-    int a=2;
+    int a=6;
     cout<<toprime(a);
 }
